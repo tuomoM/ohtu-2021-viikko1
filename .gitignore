@@ -1,0 +1,3 @@
+/__psycache__
+*.tmp
+/.pytest_cache
