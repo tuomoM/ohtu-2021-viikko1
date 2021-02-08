@@ -5,6 +5,7 @@ class Varasto:
         else:
             # virheellinen, nollataan
             self.tilavuus = 0.0
+            tilavuus = 0.0
         
         if alku_saldo < 0.0:
             # virheellinen, nollataan
@@ -42,4 +43,6 @@ class Varasto:
         return maara
     
     def __str__(self):
+        # pragma: no cover
         return f"saldo = {self.saldo}, vielä tilaa {self.paljonko_mahtuu()}"
+        
